@@ -1,24 +1,115 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="quizNigth" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mtA-z7-dMc"/>
+                        <viewControllerLayoutGuide type="bottom" id="cmq-7j-kBv"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="YXi-lF-XKq">
+                                <rect key="frame" x="-4.5" y="37.5" width="423" height="821"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="epd-If-qle" userLabel="Retangulo">
+                                <rect key="frame" x="0.0" y="37.5" width="414" height="821"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lt7-8X-cIX" customClass="BotaoComBorda" customModule="quizNigth" customModuleProvider="target">
+                                        <rect key="frame" x="8" y="752" width="398" height="52"/>
+                                        <color key="backgroundColor" red="0.21376261120000001" green="0.28615897890000003" blue="0.34501904249999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="52" id="u9N-VI-2MN"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Jogar">
+                                                    <attributes>
+                                                        <font key="NSFont" size="26" name="Helvetica"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <color key="baseForegroundColor" red="0.94562059639999996" green="0.93533670899999999" blue="0.8876263499" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2017" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jzP-Tl-mcQ">
+                                        <rect key="frame" x="176" y="223" width="62" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                        <color key="textColor" red="0.94562059639999996" green="0.93533670899999999" blue="0.8876263499" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="Wie-OH-5tJ">
+                                        <rect key="frame" x="87" y="87" width="240" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="240" id="GK9-UW-yHt"/>
+                                            <constraint firstAttribute="height" constant="128" id="TKi-2i-fqu"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Descubra qual a cidade a partir das fotos" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ajI-Ec-5WJ">
+                                        <rect key="frame" x="0.0" y="342.5" width="414" height="136"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                        <color key="textColor" red="0.94562059639999996" green="0.93533670899999999" blue="0.8876263499" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.74130309654387416" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" notEnabled="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstItem="Lt7-8X-cIX" firstAttribute="leading" secondItem="epd-If-qle" secondAttribute="leading" constant="8" id="7jq-A8-OWz"/>
+                                    <constraint firstAttribute="bottom" secondItem="Lt7-8X-cIX" secondAttribute="bottom" constant="17" id="91n-B8-5Mo"/>
+                                    <constraint firstItem="jzP-Tl-mcQ" firstAttribute="top" secondItem="Wie-OH-5tJ" secondAttribute="bottom" constant="8" symbolic="YES" id="Ddh-ER-ZLj"/>
+                                    <constraint firstItem="jzP-Tl-mcQ" firstAttribute="centerX" secondItem="epd-If-qle" secondAttribute="centerX" id="GSi-uB-6ch"/>
+                                    <constraint firstItem="ajI-Ec-5WJ" firstAttribute="centerY" secondItem="epd-If-qle" secondAttribute="centerY" id="JJM-dr-Sd6"/>
+                                    <constraint firstItem="ajI-Ec-5WJ" firstAttribute="width" secondItem="epd-If-qle" secondAttribute="height" multiplier="489:821" constant="-75.000000000000057" id="LDA-4D-Xga"/>
+                                    <constraint firstAttribute="trailing" secondItem="Lt7-8X-cIX" secondAttribute="trailing" constant="8" id="Tu4-2A-A64"/>
+                                    <constraint firstItem="Wie-OH-5tJ" firstAttribute="top" secondItem="epd-If-qle" secondAttribute="top" constant="87" id="ajv-Rw-dhx"/>
+                                    <constraint firstItem="Lt7-8X-cIX" firstAttribute="centerX" secondItem="ajI-Ec-5WJ" secondAttribute="centerX" id="bEq-e8-1Vg"/>
+                                    <constraint firstAttribute="bottom" secondItem="Lt7-8X-cIX" secondAttribute="bottom" constant="17" id="g6t-P9-y8a"/>
+                                    <constraint firstItem="Lt7-8X-cIX" firstAttribute="centerX" secondItem="epd-If-qle" secondAttribute="centerX" id="gHx-ee-qzw"/>
+                                    <constraint firstItem="ajI-Ec-5WJ" firstAttribute="height" secondItem="epd-If-qle" secondAttribute="height" multiplier="0.165652" id="ke5-3b-2Jp"/>
+                                    <constraint firstItem="Wie-OH-5tJ" firstAttribute="centerX" secondItem="epd-If-qle" secondAttribute="centerX" id="ljP-e6-TGo"/>
+                                    <constraint firstItem="ajI-Ec-5WJ" firstAttribute="centerX" secondItem="epd-If-qle" secondAttribute="centerX" id="sh5-op-AUE"/>
+                                    <constraint firstItem="ajI-Ec-5WJ" firstAttribute="width" secondItem="epd-If-qle" secondAttribute="width" multiplier="1.18116" constant="-74.999999999999943" id="xNC-ta-obf"/>
+                                    <constraint firstItem="Lt7-8X-cIX" firstAttribute="leading" secondItem="epd-If-qle" secondAttribute="leadingMargin" id="yzB-DW-RzO"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="YXi-lF-XKq" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="1.02174" id="5jV-F0-0WN"/>
+                            <constraint firstItem="YXi-lF-XKq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EDb-8s-GfL"/>
+                            <constraint firstItem="epd-If-qle" firstAttribute="width" secondItem="YXi-lF-XKq" secondAttribute="width" multiplier="0.978723" id="GfO-ZD-bdt"/>
+                            <constraint firstItem="YXi-lF-XKq" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="KgN-nG-pYm"/>
+                            <constraint firstItem="YXi-lF-XKq" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.916295" id="Mt3-nO-emo"/>
+                            <constraint firstItem="epd-If-qle" firstAttribute="centerX" secondItem="YXi-lF-XKq" secondAttribute="centerX" id="OA5-m6-YsQ"/>
+                            <constraint firstItem="epd-If-qle" firstAttribute="height" secondItem="YXi-lF-XKq" secondAttribute="height" id="PZM-s5-cio"/>
+                            <constraint firstItem="epd-If-qle" firstAttribute="centerY" secondItem="YXi-lF-XKq" secondAttribute="centerY" id="hzh-u7-Dqh"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="89.855072463768124" y="-43.526785714285715"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="bg" width="1024" height="682.5"/>
+        <image name="logo" width="426.5" height="307.5"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
