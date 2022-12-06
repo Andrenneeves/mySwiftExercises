@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="7z2-yR-81k">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
@@ -26,11 +26,8 @@
                                 <rect key="frame" x="0.0" y="37.5" width="414" height="821"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lt7-8X-cIX" customClass="BotaoComBorda" customModule="quizNigth" customModuleProvider="target">
-                                        <rect key="frame" x="8" y="752" width="398" height="52"/>
+                                        <rect key="frame" x="8" y="760" width="398" height="44"/>
                                         <color key="backgroundColor" red="0.21376261120000001" green="0.28615897890000003" blue="0.34501904249999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="52" id="u9N-VI-2MN"/>
-                                        </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain">
                                             <attributedString key="attributedTitle">
@@ -52,12 +49,15 @@
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="Wie-OH-5tJ">
                                         <rect key="frame" x="87" y="87" width="240" height="128"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="240" id="GK9-UW-yHt"/>
-                                            <constraint firstAttribute="height" constant="128" id="TKi-2i-fqu"/>
+                                            <constraint firstAttribute="height" constant="128" id="dzv-Dv-4h7"/>
+                                            <constraint firstAttribute="width" constant="240" id="qT7-1v-6bw"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Descubra qual a cidade a partir das fotos" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ajI-Ec-5WJ">
-                                        <rect key="frame" x="0.0" y="342.5" width="414" height="136"/>
+                                        <rect key="frame" x="0.0" y="338" width="414" height="140"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="140" id="xCA-yP-K4Z"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                         <color key="textColor" red="0.94562059639999996" green="0.93533670899999999" blue="0.8876263499" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -68,41 +68,182 @@
                                     <accessibilityTraits key="traits" notEnabled="YES"/>
                                 </accessibility>
                                 <constraints>
-                                    <constraint firstItem="Lt7-8X-cIX" firstAttribute="leading" secondItem="epd-If-qle" secondAttribute="leading" constant="8" id="7jq-A8-OWz"/>
-                                    <constraint firstAttribute="bottom" secondItem="Lt7-8X-cIX" secondAttribute="bottom" constant="17" id="91n-B8-5Mo"/>
-                                    <constraint firstItem="jzP-Tl-mcQ" firstAttribute="top" secondItem="Wie-OH-5tJ" secondAttribute="bottom" constant="8" symbolic="YES" id="Ddh-ER-ZLj"/>
-                                    <constraint firstItem="jzP-Tl-mcQ" firstAttribute="centerX" secondItem="epd-If-qle" secondAttribute="centerX" id="GSi-uB-6ch"/>
-                                    <constraint firstItem="ajI-Ec-5WJ" firstAttribute="centerY" secondItem="epd-If-qle" secondAttribute="centerY" id="JJM-dr-Sd6"/>
-                                    <constraint firstItem="ajI-Ec-5WJ" firstAttribute="width" secondItem="epd-If-qle" secondAttribute="height" multiplier="489:821" constant="-75.000000000000057" id="LDA-4D-Xga"/>
-                                    <constraint firstAttribute="trailing" secondItem="Lt7-8X-cIX" secondAttribute="trailing" constant="8" id="Tu4-2A-A64"/>
-                                    <constraint firstItem="Wie-OH-5tJ" firstAttribute="top" secondItem="epd-If-qle" secondAttribute="top" constant="87" id="ajv-Rw-dhx"/>
-                                    <constraint firstItem="Lt7-8X-cIX" firstAttribute="centerX" secondItem="ajI-Ec-5WJ" secondAttribute="centerX" id="bEq-e8-1Vg"/>
-                                    <constraint firstAttribute="bottom" secondItem="Lt7-8X-cIX" secondAttribute="bottom" constant="17" id="g6t-P9-y8a"/>
-                                    <constraint firstItem="Lt7-8X-cIX" firstAttribute="centerX" secondItem="epd-If-qle" secondAttribute="centerX" id="gHx-ee-qzw"/>
-                                    <constraint firstItem="ajI-Ec-5WJ" firstAttribute="height" secondItem="epd-If-qle" secondAttribute="height" multiplier="0.165652" id="ke5-3b-2Jp"/>
-                                    <constraint firstItem="Wie-OH-5tJ" firstAttribute="centerX" secondItem="epd-If-qle" secondAttribute="centerX" id="ljP-e6-TGo"/>
-                                    <constraint firstItem="ajI-Ec-5WJ" firstAttribute="centerX" secondItem="epd-If-qle" secondAttribute="centerX" id="sh5-op-AUE"/>
-                                    <constraint firstItem="ajI-Ec-5WJ" firstAttribute="width" secondItem="epd-If-qle" secondAttribute="width" multiplier="1.18116" constant="-74.999999999999943" id="xNC-ta-obf"/>
-                                    <constraint firstItem="Lt7-8X-cIX" firstAttribute="leading" secondItem="epd-If-qle" secondAttribute="leadingMargin" id="yzB-DW-RzO"/>
+                                    <constraint firstItem="ajI-Ec-5WJ" firstAttribute="top" secondItem="jzP-Tl-mcQ" secondAttribute="bottom" constant="81" id="7fe-c1-c8l"/>
+                                    <constraint firstItem="ajI-Ec-5WJ" firstAttribute="leading" secondItem="epd-If-qle" secondAttribute="leading" id="953-S8-YAt"/>
+                                    <constraint firstItem="jzP-Tl-mcQ" firstAttribute="top" secondItem="Wie-OH-5tJ" secondAttribute="bottom" constant="8" symbolic="YES" id="BFj-kF-ltx"/>
+                                    <constraint firstAttribute="bottom" secondItem="Lt7-8X-cIX" secondAttribute="bottom" constant="17" id="Bec-2k-Vb8"/>
+                                    <constraint firstItem="jzP-Tl-mcQ" firstAttribute="centerX" secondItem="epd-If-qle" secondAttribute="centerX" id="RS7-yb-x9R"/>
+                                    <constraint firstAttribute="trailing" secondItem="Lt7-8X-cIX" secondAttribute="trailing" constant="8" id="Ux8-lo-OZD"/>
+                                    <constraint firstItem="Wie-OH-5tJ" firstAttribute="centerX" secondItem="epd-If-qle" secondAttribute="centerX" id="XWn-gx-vDp"/>
+                                    <constraint firstItem="Lt7-8X-cIX" firstAttribute="centerX" secondItem="epd-If-qle" secondAttribute="centerX" id="XiQ-W8-NqX"/>
+                                    <constraint firstItem="Wie-OH-5tJ" firstAttribute="top" secondItem="epd-If-qle" secondAttribute="top" constant="87" id="ahT-4r-q6H"/>
+                                    <constraint firstAttribute="trailing" secondItem="Lt7-8X-cIX" secondAttribute="trailing" constant="8" id="eaj-ai-J3V"/>
+                                    <constraint firstItem="ajI-Ec-5WJ" firstAttribute="centerX" secondItem="jzP-Tl-mcQ" secondAttribute="centerX" id="miQ-T4-Epx"/>
+                                    <constraint firstItem="ajI-Ec-5WJ" firstAttribute="centerX" secondItem="Lt7-8X-cIX" secondAttribute="centerX" id="oXy-hG-vsf"/>
+                                    <constraint firstItem="Lt7-8X-cIX" firstAttribute="leading" secondItem="epd-If-qle" secondAttribute="leading" constant="8" id="rbu-vL-4gR"/>
+                                    <constraint firstAttribute="trailing" secondItem="Lt7-8X-cIX" secondAttribute="trailing" constant="8" id="wdz-TT-CG4"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="YXi-lF-XKq" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="1.02174" id="5jV-F0-0WN"/>
-                            <constraint firstItem="YXi-lF-XKq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EDb-8s-GfL"/>
-                            <constraint firstItem="epd-If-qle" firstAttribute="width" secondItem="YXi-lF-XKq" secondAttribute="width" multiplier="0.978723" id="GfO-ZD-bdt"/>
-                            <constraint firstItem="YXi-lF-XKq" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="KgN-nG-pYm"/>
-                            <constraint firstItem="YXi-lF-XKq" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.916295" id="Mt3-nO-emo"/>
-                            <constraint firstItem="epd-If-qle" firstAttribute="centerX" secondItem="YXi-lF-XKq" secondAttribute="centerX" id="OA5-m6-YsQ"/>
-                            <constraint firstItem="epd-If-qle" firstAttribute="height" secondItem="YXi-lF-XKq" secondAttribute="height" id="PZM-s5-cio"/>
-                            <constraint firstItem="epd-If-qle" firstAttribute="centerY" secondItem="YXi-lF-XKq" secondAttribute="centerY" id="hzh-u7-Dqh"/>
+                            <constraint firstItem="YXi-lF-XKq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0HT-5k-UD9"/>
+                            <constraint firstItem="epd-If-qle" firstAttribute="height" secondItem="YXi-lF-XKq" secondAttribute="height" id="3NU-2s-5NT"/>
+                            <constraint firstItem="epd-If-qle" firstAttribute="centerX" secondItem="YXi-lF-XKq" secondAttribute="centerX" id="9cg-NN-GHu"/>
+                            <constraint firstItem="YXi-lF-XKq" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.916295" id="R8Z-rw-Vhw"/>
+                            <constraint firstItem="YXi-lF-XKq" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="1.02174" id="fMZ-C5-ob5"/>
+                            <constraint firstItem="epd-If-qle" firstAttribute="centerY" secondItem="YXi-lF-XKq" secondAttribute="centerY" id="hag-zE-Ewt"/>
+                            <constraint firstItem="YXi-lF-XKq" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="mpo-Dl-CGb"/>
+                            <constraint firstItem="epd-If-qle" firstAttribute="width" secondItem="YXi-lF-XKq" secondAttribute="width" multiplier="0.978723" id="t95-tr-wul"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="quizNigthLogo" destination="Wie-OH-5tJ" id="jGG-Dg-KaF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="89.855072463768124" y="-43.526785714285715"/>
+            <point key="canvasLocation" x="-155" y="-125"/>
+        </scene>
+        <!--Questoes View Controller-->
+        <scene sceneID="PlS-nO-6fB">
+            <objects>
+                <viewController id="7z2-yR-81k" customClass="QuestoesViewController" customModule="quizNigth" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2xh-OP-PiK"/>
+                        <viewControllerLayoutGuide type="bottom" id="x4Z-pz-a8t"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GBs-c3-qhs">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="ZJ4-Te-JYd">
+                                <rect key="frame" x="-4.5" y="37.5" width="423" height="821"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ezh-Fd-N6a" userLabel="Retangulo">
+                                <rect key="frame" x="0.0" y="37.5" width="414" height="821"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Qual a cidade?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8mb-4Z-SIc">
+                                        <rect key="frame" x="107" y="299" width="200" height="140"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="140" id="EfP-vb-CEm"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                        <color key="textColor" red="0.94562059639999996" green="0.93533670899999999" blue="0.8876263499" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="sej-px-9q0">
+                                        <rect key="frame" x="0.0" y="580" width="414" height="231"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Hf-mM-a7u" customClass="BotaoComBorda" customModule="quizNigth" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                                                <color key="backgroundColor" red="0.21376261120000001" green="0.28615897890000003" blue="0.34501904249999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="qSa-kc-IGa"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="Jogar">
+                                                            <attributes>
+                                                                <font key="NSFont" size="26" name="Helvetica"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                    <color key="baseForegroundColor" red="0.94562059639999996" green="0.93533670899999999" blue="0.8876263499" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f7V-rC-KGu" customClass="BotaoComBorda" customModule="quizNigth" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="73" width="414" height="44"/>
+                                                <color key="backgroundColor" red="0.21376261120000001" green="0.28615897890000003" blue="0.34501904249999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="Jogar">
+                                                            <attributes>
+                                                                <font key="NSFont" size="26" name="Helvetica"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                    <color key="baseForegroundColor" red="0.94562059639999996" green="0.93533670899999999" blue="0.8876263499" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oyf-gK-5EW" customClass="BotaoComBorda" customModule="quizNigth" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="130" width="414" height="44"/>
+                                                <color key="backgroundColor" red="0.21376261120000001" green="0.28615897890000003" blue="0.34501904249999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="Jogar">
+                                                            <attributes>
+                                                                <font key="NSFont" size="26" name="Helvetica"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                    <color key="baseForegroundColor" red="0.94562059639999996" green="0.93533670899999999" blue="0.8876263499" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pJq-Fo-jC0" customClass="BotaoComBorda" customModule="quizNigth" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="187" width="414" height="44"/>
+                                                <color key="backgroundColor" red="0.21376261120000001" green="0.28615897890000003" blue="0.34501904249999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="Jogar">
+                                                            <attributes>
+                                                                <font key="NSFont" size="26" name="Helvetica"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                    <color key="baseForegroundColor" red="0.94562059639999996" green="0.93533670899999999" blue="0.8876263499" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" misplaced="YES" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="uZR-zn-y6a">
+                                        <rect key="frame" x="-12" y="0.0" width="426" height="317"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.74130309650000004" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" notEnabled="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstItem="8mb-4Z-SIc" firstAttribute="leading" secondItem="ezh-Fd-N6a" secondAttribute="leading" constant="107" id="EE1-CM-LZQ"/>
+                                    <constraint firstItem="uZR-zn-y6a" firstAttribute="width" secondItem="ezh-Fd-N6a" secondAttribute="width" constant="12" id="O2r-hr-2uE"/>
+                                    <constraint firstAttribute="trailing" secondItem="sej-px-9q0" secondAttribute="trailing" id="O3Q-du-lfr"/>
+                                    <constraint firstItem="uZR-zn-y6a" firstAttribute="top" secondItem="ezh-Fd-N6a" secondAttribute="top" id="RXP-Ze-sqp"/>
+                                    <constraint firstItem="8mb-4Z-SIc" firstAttribute="centerX" secondItem="sej-px-9q0" secondAttribute="centerX" id="TJK-Dw-9R0"/>
+                                    <constraint firstAttribute="bottom" secondItem="sej-px-9q0" secondAttribute="bottom" constant="10" id="Ttm-fr-xF0"/>
+                                    <constraint firstItem="8mb-4Z-SIc" firstAttribute="top" secondItem="ezh-Fd-N6a" secondAttribute="top" constant="299" id="ULg-fw-DbX"/>
+                                    <constraint firstItem="8mb-4Z-SIc" firstAttribute="leading" secondItem="uZR-zn-y6a" secondAttribute="trailing" constant="-307" id="Z4f-dk-SXY"/>
+                                    <constraint firstItem="uZR-zn-y6a" firstAttribute="top" secondItem="ezh-Fd-N6a" secondAttribute="top" id="dOB-Ee-Mcj"/>
+                                    <constraint firstItem="sej-px-9q0" firstAttribute="top" secondItem="8mb-4Z-SIc" secondAttribute="bottom" constant="141" id="n6N-ob-FEd"/>
+                                    <constraint firstItem="uZR-zn-y6a" firstAttribute="top" secondItem="ezh-Fd-N6a" secondAttribute="top" id="ojc-4H-k2l"/>
+                                    <constraint firstItem="sej-px-9q0" firstAttribute="leading" secondItem="ezh-Fd-N6a" secondAttribute="leading" id="uwl-A0-5z4"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ezh-Fd-N6a" firstAttribute="centerY" secondItem="ZJ4-Te-JYd" secondAttribute="centerY" id="P4z-yv-UZt"/>
+                            <constraint firstItem="ZJ4-Te-JYd" firstAttribute="height" secondItem="GBs-c3-qhs" secondAttribute="height" multiplier="0.916295" id="S9m-4l-fGI"/>
+                            <constraint firstItem="ezh-Fd-N6a" firstAttribute="width" secondItem="ZJ4-Te-JYd" secondAttribute="width" multiplier="0.978723" id="TL8-xp-gRR"/>
+                            <constraint firstItem="ZJ4-Te-JYd" firstAttribute="centerX" secondItem="GBs-c3-qhs" secondAttribute="centerX" id="V9q-QJ-FND"/>
+                            <constraint firstItem="ezh-Fd-N6a" firstAttribute="height" secondItem="ZJ4-Te-JYd" secondAttribute="height" id="YuZ-Zs-IFD"/>
+                            <constraint firstItem="ZJ4-Te-JYd" firstAttribute="centerY" secondItem="GBs-c3-qhs" secondAttribute="centerY" id="Yvx-bg-xSV"/>
+                            <constraint firstItem="ezh-Fd-N6a" firstAttribute="centerX" secondItem="ZJ4-Te-JYd" secondAttribute="centerX" id="cs4-Ay-DoK"/>
+                            <constraint firstItem="ZJ4-Te-JYd" firstAttribute="width" secondItem="GBs-c3-qhs" secondAttribute="width" multiplier="1.02174" id="zdU-Kd-K4v"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dicaImg" destination="uZR-zn-y6a" id="2VX-dR-Rpu"/>
+                        <outlet property="stackBotoes" destination="sej-px-9q0" id="oC7-tS-bdr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gFb-R7-Q8U" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="521.73913043478262" y="-125.22321428571428"/>
         </scene>
     </scenes>
     <resources>

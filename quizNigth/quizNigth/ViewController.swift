@@ -1,17 +1,13 @@
-//
-//  ViewController.swift
-//  quizNigth
-//
-//  Created by user on 28/11/22.
-//
+
 
 import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var quizNigthLogo: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+     
     }
 
 
