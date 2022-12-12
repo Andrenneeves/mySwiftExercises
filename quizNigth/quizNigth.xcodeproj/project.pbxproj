@@ -13,6 +13,7 @@
 		CE0425BB2935465B006EFE79 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE0425B92935465B006EFE79 /* Main.storyboard */; };
 		CE0425BD2935465F006EFE79 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE0425BC2935465F006EFE79 /* Assets.xcassets */; };
 		CE0425C02935465F006EFE79 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE0425BE2935465F006EFE79 /* LaunchScreen.storyboard */; };
+		CE3013122947BE350013657E /* gameOverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3013112947BE350013657E /* gameOverViewController.swift */; };
 		CE4DBD4129369F7500D35BDA /* BotaoComBorda.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4DBD4029369F7500D35BDA /* BotaoComBorda.swift */; };
 		CE7C0686293FD49500EB3C80 /* QuestoesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7C0685293FD49500EB3C80 /* QuestoesViewController.swift */; };
 /* End PBXBuildFile section */
@@ -26,6 +27,7 @@
 		CE0425BC2935465F006EFE79 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE0425BF2935465F006EFE79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE0425C12935465F006EFE79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE3013112947BE350013657E /* gameOverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gameOverViewController.swift; sourceTree = "<group>"; };
 		CE4DBD4029369F7500D35BDA /* BotaoComBorda.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BotaoComBorda.swift; sourceTree = "<group>"; };
 		CE7C0685293FD49500EB3C80 /* QuestoesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestoesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -69,6 +71,7 @@
 				CE0425C12935465F006EFE79 /* Info.plist */,
 				CE4DBD4029369F7500D35BDA /* BotaoComBorda.swift */,
 				CE7C0685293FD49500EB3C80 /* QuestoesViewController.swift */,
+				CE3013112947BE350013657E /* gameOverViewController.swift */,
 			);
 			path = quizNigth;
 			sourceTree = "<group>";
@@ -144,6 +147,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE3013122947BE350013657E /* gameOverViewController.swift in Sources */,
 				CE7C0686293FD49500EB3C80 /* QuestoesViewController.swift in Sources */,
 				CE0425B82935465B006EFE79 /* ViewController.swift in Sources */,
 				CE0425B42935465B006EFE79 /* AppDelegate.swift in Sources */,

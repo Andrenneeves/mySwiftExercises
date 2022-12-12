@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="7z2-yR-81k">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
@@ -23,10 +23,10 @@
                                 <rect key="frame" x="-4.5" y="37.5" width="423" height="821"/>
                             </imageView>
                             <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="epd-If-qle" userLabel="Retangulo">
-                                <rect key="frame" x="0.0" y="37.5" width="414" height="821"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="859"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lt7-8X-cIX" customClass="BotaoComBorda" customModule="quizNigth" customModuleProvider="target">
-                                        <rect key="frame" x="8" y="760" width="398" height="44"/>
+                                        <rect key="frame" x="162.5" y="760" width="89.5" height="44"/>
                                         <color key="backgroundColor" red="0.21376261120000001" green="0.28615897890000003" blue="0.34501904249999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain">
@@ -39,6 +39,9 @@
                                             </attributedString>
                                             <color key="baseForegroundColor" red="0.94562059639999996" green="0.93533670899999999" blue="0.8876263499" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="7z2-yR-81k" kind="custom" id="rfz-Dr-av0"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2017" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jzP-Tl-mcQ">
                                         <rect key="frame" x="176" y="223" width="62" height="34"/>
@@ -71,28 +74,28 @@
                                     <constraint firstItem="ajI-Ec-5WJ" firstAttribute="top" secondItem="jzP-Tl-mcQ" secondAttribute="bottom" constant="81" id="7fe-c1-c8l"/>
                                     <constraint firstItem="ajI-Ec-5WJ" firstAttribute="leading" secondItem="epd-If-qle" secondAttribute="leading" id="953-S8-YAt"/>
                                     <constraint firstItem="jzP-Tl-mcQ" firstAttribute="top" secondItem="Wie-OH-5tJ" secondAttribute="bottom" constant="8" symbolic="YES" id="BFj-kF-ltx"/>
-                                    <constraint firstAttribute="bottom" secondItem="Lt7-8X-cIX" secondAttribute="bottom" constant="17" id="Bec-2k-Vb8"/>
+                                    <constraint firstAttribute="bottom" secondItem="Lt7-8X-cIX" secondAttribute="bottom" constant="55" id="Bec-2k-Vb8"/>
                                     <constraint firstItem="jzP-Tl-mcQ" firstAttribute="centerX" secondItem="epd-If-qle" secondAttribute="centerX" id="RS7-yb-x9R"/>
-                                    <constraint firstAttribute="trailing" secondItem="Lt7-8X-cIX" secondAttribute="trailing" constant="8" id="Ux8-lo-OZD"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Lt7-8X-cIX" secondAttribute="trailing" id="Ux8-lo-OZD"/>
                                     <constraint firstItem="Wie-OH-5tJ" firstAttribute="centerX" secondItem="epd-If-qle" secondAttribute="centerX" id="XWn-gx-vDp"/>
                                     <constraint firstItem="Lt7-8X-cIX" firstAttribute="centerX" secondItem="epd-If-qle" secondAttribute="centerX" id="XiQ-W8-NqX"/>
                                     <constraint firstItem="Wie-OH-5tJ" firstAttribute="top" secondItem="epd-If-qle" secondAttribute="top" constant="87" id="ahT-4r-q6H"/>
-                                    <constraint firstAttribute="trailing" secondItem="Lt7-8X-cIX" secondAttribute="trailing" constant="8" id="eaj-ai-J3V"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Lt7-8X-cIX" secondAttribute="trailing" id="eaj-ai-J3V"/>
                                     <constraint firstItem="ajI-Ec-5WJ" firstAttribute="centerX" secondItem="jzP-Tl-mcQ" secondAttribute="centerX" id="miQ-T4-Epx"/>
                                     <constraint firstItem="ajI-Ec-5WJ" firstAttribute="centerX" secondItem="Lt7-8X-cIX" secondAttribute="centerX" id="oXy-hG-vsf"/>
-                                    <constraint firstItem="Lt7-8X-cIX" firstAttribute="leading" secondItem="epd-If-qle" secondAttribute="leading" constant="8" id="rbu-vL-4gR"/>
-                                    <constraint firstAttribute="trailing" secondItem="Lt7-8X-cIX" secondAttribute="trailing" constant="8" id="wdz-TT-CG4"/>
+                                    <constraint firstItem="Lt7-8X-cIX" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="epd-If-qle" secondAttribute="leading" id="rbu-vL-4gR"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Lt7-8X-cIX" secondAttribute="trailing" id="wdz-TT-CG4"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="YXi-lF-XKq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0HT-5k-UD9"/>
-                            <constraint firstItem="epd-If-qle" firstAttribute="height" secondItem="YXi-lF-XKq" secondAttribute="height" id="3NU-2s-5NT"/>
+                            <constraint firstItem="epd-If-qle" firstAttribute="height" secondItem="YXi-lF-XKq" secondAttribute="height" constant="38" id="3NU-2s-5NT"/>
                             <constraint firstItem="epd-If-qle" firstAttribute="centerX" secondItem="YXi-lF-XKq" secondAttribute="centerX" id="9cg-NN-GHu"/>
                             <constraint firstItem="YXi-lF-XKq" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.916295" id="R8Z-rw-Vhw"/>
                             <constraint firstItem="YXi-lF-XKq" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="1.02174" id="fMZ-C5-ob5"/>
-                            <constraint firstItem="epd-If-qle" firstAttribute="centerY" secondItem="YXi-lF-XKq" secondAttribute="centerY" id="hag-zE-Ewt"/>
+                            <constraint firstItem="epd-If-qle" firstAttribute="centerY" secondItem="YXi-lF-XKq" secondAttribute="centerY" constant="-18.5" id="hag-zE-Ewt"/>
                             <constraint firstItem="YXi-lF-XKq" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="mpo-Dl-CGb"/>
                             <constraint firstItem="epd-If-qle" firstAttribute="width" secondItem="YXi-lF-XKq" secondAttribute="width" multiplier="0.978723" id="t95-tr-wul"/>
                         </constraints>
@@ -103,7 +106,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-155" y="-125"/>
+            <point key="canvasLocation" x="-155.07246376811597" y="-125.22321428571428"/>
         </scene>
         <!--Questoes View Controller-->
         <scene sceneID="PlS-nO-6fB">
@@ -152,6 +155,9 @@
                                                     </attributedString>
                                                     <color key="baseForegroundColor" red="0.94562059639999996" green="0.93533670899999999" blue="0.8876263499" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="botao1Click:" destination="7z2-yR-81k" eventType="touchUpInside" id="O0p-sr-7Si"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f7V-rC-KGu" customClass="BotaoComBorda" customModule="quizNigth" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="73" width="414" height="44"/>
@@ -167,6 +173,9 @@
                                                     </attributedString>
                                                     <color key="baseForegroundColor" red="0.94562059639999996" green="0.93533670899999999" blue="0.8876263499" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="botao2Click:" destination="7z2-yR-81k" eventType="touchUpInside" id="4dV-fE-iqo"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oyf-gK-5EW" customClass="BotaoComBorda" customModule="quizNigth" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="130" width="414" height="44"/>
@@ -182,6 +191,9 @@
                                                     </attributedString>
                                                     <color key="baseForegroundColor" red="0.94562059639999996" green="0.93533670899999999" blue="0.8876263499" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="botao3Click:" destination="7z2-yR-81k" eventType="touchUpInside" id="Xd8-UA-0Cv"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pJq-Fo-jC0" customClass="BotaoComBorda" customModule="quizNigth" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="187" width="414" height="44"/>
@@ -197,11 +209,14 @@
                                                     </attributedString>
                                                     <color key="baseForegroundColor" red="0.94562059639999996" green="0.93533670899999999" blue="0.8876263499" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="botao4Click:" destination="7z2-yR-81k" eventType="touchUpInside" id="j4E-mi-aoO"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" misplaced="YES" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="uZR-zn-y6a">
-                                        <rect key="frame" x="-12" y="0.0" width="426" height="317"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="291"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.74130309650000004" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -210,7 +225,7 @@
                                 </accessibility>
                                 <constraints>
                                     <constraint firstItem="8mb-4Z-SIc" firstAttribute="leading" secondItem="ezh-Fd-N6a" secondAttribute="leading" constant="107" id="EE1-CM-LZQ"/>
-                                    <constraint firstItem="uZR-zn-y6a" firstAttribute="width" secondItem="ezh-Fd-N6a" secondAttribute="width" constant="12" id="O2r-hr-2uE"/>
+                                    <constraint firstItem="uZR-zn-y6a" firstAttribute="width" secondItem="ezh-Fd-N6a" secondAttribute="width" id="O2r-hr-2uE"/>
                                     <constraint firstAttribute="trailing" secondItem="sej-px-9q0" secondAttribute="trailing" id="O3Q-du-lfr"/>
                                     <constraint firstItem="uZR-zn-y6a" firstAttribute="top" secondItem="ezh-Fd-N6a" secondAttribute="top" id="RXP-Ze-sqp"/>
                                     <constraint firstItem="8mb-4Z-SIc" firstAttribute="centerX" secondItem="sej-px-9q0" secondAttribute="centerX" id="TJK-Dw-9R0"/>
@@ -239,11 +254,109 @@
                     <connections>
                         <outlet property="dicaImg" destination="uZR-zn-y6a" id="2VX-dR-Rpu"/>
                         <outlet property="stackBotoes" destination="sej-px-9q0" id="oC7-tS-bdr"/>
+                        <segue destination="vrl-Ky-OSB" kind="modal" identifier="fimDeJogo" id="Rh3-ET-cAW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gFb-R7-Q8U" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="521.73913043478262" y="-125.22321428571428"/>
+            <point key="canvasLocation" x="556.52173913043487" y="-125.22321428571428"/>
+        </scene>
+        <!--Game Over View Controller-->
+        <scene sceneID="gCQ-Za-ws8">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="vrl-Ky-OSB" customClass="gameOverViewController" customModule="quizNigth" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jna-bP-9Iu"/>
+                        <viewControllerLayoutGuide type="bottom" id="beg-rS-4Fh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="f82-gU-aaP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="uN7-Ig-wtk">
+                                <rect key="frame" x="-4.5" y="37.5" width="423" height="821"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F5P-42-SED" userLabel="Retangulo">
+                                <rect key="frame" x="0.0" y="37.5" width="414" height="821"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FIM DE JOGO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nFH-8Q-AAD">
+                                        <rect key="frame" x="93" y="112" width="228" height="45.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                        <color key="textColor" red="0.94562059639999996" green="0.93533670899999999" blue="0.8876263499" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PONTOS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SDQ-Dt-UY2">
+                                        <rect key="frame" x="153.5" y="585" width="107" height="32.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                        <color key="textColor" red="0.94562059639999996" green="0.93533670899999999" blue="0.8876263499" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jhp-0K-kWo">
+                                        <rect key="frame" x="54" y="291" width="272" height="239"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="200"/>
+                                        <color key="textColor" red="0.94562059639999996" green="0.93533670899999999" blue="0.8876263499" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jNK-X7-Qwf" customClass="BotaoComBorda" customModule="quizNigth" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="767" width="414" height="44"/>
+                                        <color key="backgroundColor" red="0.21376261120000001" green="0.28615897890000003" blue="0.34501904249999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <bool key="isElement" value="NO"/>
+                                        </accessibility>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Jogar">
+                                                    <attributes>
+                                                        <font key="NSFont" size="26" name="Helvetica"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <color key="baseForegroundColor" red="0.94562059639999996" green="0.93533670899999999" blue="0.8876263499" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="lUD-l4-4xy" kind="unwind" unwindAction="voltandoPraCaWithSegue:" id="dzn-x7-iYa"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.74130309650000004" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" notEnabled="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstItem="SDQ-Dt-UY2" firstAttribute="top" secondItem="jhp-0K-kWo" secondAttribute="bottom" constant="55" id="3fi-4s-Ofh"/>
+                                    <constraint firstItem="jhp-0K-kWo" firstAttribute="leading" secondItem="F5P-42-SED" secondAttribute="leading" constant="54" id="8Oz-Sj-mwu"/>
+                                    <constraint firstItem="SDQ-Dt-UY2" firstAttribute="centerX" secondItem="F5P-42-SED" secondAttribute="centerX" id="AGa-Cw-Dbo"/>
+                                    <constraint firstItem="jhp-0K-kWo" firstAttribute="centerY" secondItem="F5P-42-SED" secondAttribute="centerY" id="GPU-44-hlD"/>
+                                    <constraint firstItem="nFH-8Q-AAD" firstAttribute="centerX" secondItem="F5P-42-SED" secondAttribute="centerX" id="TqI-xX-OwJ"/>
+                                    <constraint firstAttribute="bottom" secondItem="jNK-X7-Qwf" secondAttribute="bottom" constant="10" id="Yo6-QH-jRe"/>
+                                    <constraint firstAttribute="trailing" secondItem="jhp-0K-kWo" secondAttribute="trailing" constant="88" id="bc2-fd-Vqy"/>
+                                    <constraint firstItem="nFH-8Q-AAD" firstAttribute="top" secondItem="F5P-42-SED" secondAttribute="top" constant="112" id="clg-wm-9QH"/>
+                                    <constraint firstItem="jNK-X7-Qwf" firstAttribute="leading" secondItem="F5P-42-SED" secondAttribute="leading" id="lpy-ws-GMa"/>
+                                    <constraint firstAttribute="trailing" secondItem="jNK-X7-Qwf" secondAttribute="trailing" id="rGs-Xh-o0I"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="F5P-42-SED" firstAttribute="width" secondItem="uN7-Ig-wtk" secondAttribute="width" multiplier="0.978723" id="RhJ-Dk-CKg"/>
+                            <constraint firstItem="F5P-42-SED" firstAttribute="centerY" secondItem="uN7-Ig-wtk" secondAttribute="centerY" id="aXh-V3-fKw"/>
+                            <constraint firstItem="uN7-Ig-wtk" firstAttribute="centerX" secondItem="f82-gU-aaP" secondAttribute="centerX" id="hRR-TD-iQA"/>
+                            <constraint firstItem="F5P-42-SED" firstAttribute="centerX" secondItem="uN7-Ig-wtk" secondAttribute="centerX" id="jij-Br-Xkq"/>
+                            <constraint firstItem="uN7-Ig-wtk" firstAttribute="centerY" secondItem="f82-gU-aaP" secondAttribute="centerY" id="olr-Wl-Bhd"/>
+                            <constraint firstItem="F5P-42-SED" firstAttribute="height" secondItem="uN7-Ig-wtk" secondAttribute="height" id="tvm-MX-djv"/>
+                            <constraint firstItem="uN7-Ig-wtk" firstAttribute="width" secondItem="f82-gU-aaP" secondAttribute="width" multiplier="1.02174" id="v9b-5z-DXb"/>
+                            <constraint firstItem="uN7-Ig-wtk" firstAttribute="height" secondItem="f82-gU-aaP" secondAttribute="height" multiplier="0.916295" id="zF5-tE-D8H"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="pontuacaoLabel" destination="jhp-0K-kWo" id="B9M-Ev-3wu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q1d-gh-qNQ" sceneMemberID="firstResponder"/>
+                <exit id="lUD-l4-4xy" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1218.840579710145" y="-125.22321428571428"/>
         </scene>
     </scenes>
     <resources>
